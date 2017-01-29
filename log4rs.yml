@@ -1,0 +1,13 @@
+refresh_rate: 30 seconds
+
+appenders:
+  trace_file:
+    kind: file
+    path: "log/trace.log"
+    encoder:
+      pattern: "{d} - {m}{n}"
+
+root:
+  level: trace
+  appenders:
+    - trace_file

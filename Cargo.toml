@@ -1,0 +1,19 @@
+[package]
+name = "ls_cxx"
+version = "0.1.0"
+authors = ["Jacob Smith <jacob101607@yahoo.com>"]
+
+[dependencies]
+clang = "0.14.0"
+clang-sys = "0.11.0"
+futures = "0.1"
+ls_service = { git = "https://github.com/smith61/ls_service" }
+lsp_rs = { git = "https://github.com/smith61/rls_proto" }
+tokio-core = "0.1"
+tokio-stdio = { git = "https://github.com/smith61/tokio-stdio" }
+
+log = "0.3"
+log4rs = "0.5.2"
+
+[features]
+clang_3_9 = []
