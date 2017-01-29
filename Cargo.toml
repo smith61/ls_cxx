@@ -15,5 +15,9 @@ tokio-stdio = { git = "https://github.com/smith61/tokio-stdio" }
 log = "0.3"
 log4rs = "0.5.2"
 
+[target.'cfg(windows)'.dependencies]
+winapi = "0.2.8"
+kernel32-sys = "0.2.2"
+
 [features]
 clang_3_9 = []
