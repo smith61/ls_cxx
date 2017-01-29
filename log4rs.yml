@@ -4,10 +4,22 @@ appenders:
   trace_file:
     kind: file
     path: "log/trace.log"
-    encoder:
-      pattern: "{d} - {m}{n}"
 
 root:
-  level: trace
-  appenders:
-    - trace_file
+  level: off
+
+loggers:
+  lsp_rs:
+    level: trace
+    appenders:
+      - trace_file
+
+  ls_service:
+    level: trace
+    appenders:
+      - trace_file
+
+  ls_cxx:
+    level: trace
+    appenders:
+      - trace_file
